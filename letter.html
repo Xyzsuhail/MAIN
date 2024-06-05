@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./envelope.css">
+</head>
+<body>
+    <p>Click on the heart!</p>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>My love.</strong>
+                        <p>
+                            Ik i haven't been giving you much time and ghosting you because of my sleepiness... Give me a chance to make things right and make it up to you. I really did not wanted to make you feel unloved in any way. I love you a lot and always will... Your alien. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+<br>
+<div class="btn">
+    <a href="no3.html">Yes</a>
+    <br><br>
+    <a href="no3.html">No</a>
+  </div>
+
+</body>
+</html>
